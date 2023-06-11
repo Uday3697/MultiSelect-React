@@ -4,7 +4,7 @@ import "./App.css"
 const App: React.FC = () => {
   return (
     <div className='container'>
-      <h1>select Value</h1>
+      <h3>select Value</h3>
       <MultiselectDropdown value={['val1', 'val2']} readonly={true} />
     </div>
   );
