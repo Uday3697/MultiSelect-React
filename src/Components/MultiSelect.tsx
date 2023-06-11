@@ -13,7 +13,7 @@ const MultiselectDropdown: React.FC<MultiselectDropdownProps> = ({
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { value: checkboxValue, checked } = event.target;
-
+    
     if (checked) {
       setSelectedValues([...selectedValues, checkboxValue]);
     } else {
@@ -49,6 +49,9 @@ const MultiselectDropdown: React.FC<MultiselectDropdownProps> = ({
 
   return (
     <div className='main-container'>
+      <div className="min-con">
+
+      
       <label>Options:</label>
       <div>
         <input
@@ -77,8 +80,7 @@ const MultiselectDropdown: React.FC<MultiselectDropdownProps> = ({
               <input
                 type="checkbox"
                 value={cname.name}
-                checked={selectedValues.includes(cname.name)}
-                disabled={readonly}
+                // disabled={readonly}
                 onChange={handleChange}
               />
               <label>{cname.name}</label>
@@ -86,6 +88,7 @@ const MultiselectDropdown: React.FC<MultiselectDropdownProps> = ({
           )
         })
       }
+    </div>
     </div>
   );
 };

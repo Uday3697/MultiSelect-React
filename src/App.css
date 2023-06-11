@@ -5,7 +5,26 @@
   text-align: center;
 }
 .main-container{
-  max-width: 500px;
+  max-width: 400px;
   border: 1px solid grey;
   border-radius: 15pxss;
+  height: 400px;padding: 5px;
+  margin-left: 20%;
+  margin: auto;
+  text-align: left;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  background-color: aliceblue;
+  color: black;
+}
+.container{
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  background-color: aliceblue;
+  /* border:1px solid red */
+}
+.min-con{
+  padding: 10px;
+  border: 1px solid black;
 }
